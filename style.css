@@ -1,69 +1,62 @@
-body{
-    background-color: #ccc;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
 }
-.container{
-    border:none;
-    width: 50%;
-    margin: auto;
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    
-    border-radius: 15px;
-    padding: 5px 18px;
+    justify-content: center;
+    font-size: 15px;
+    background-color: hsl(212, 45%, 89%);
+    margin: 1.25rem;
+}
+
+.container {
     background-color: #fff;
-    max-width: 480px;
-}
-
-img{
-    width: 100%;
-     padding-bottom: 8px;
-    margin-bottom: 3px;
-    display: inline;
-    margin: auto;
-    border-radius: 10px;
-    padding-top: 10px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 5px rgb(164, 164, 164);
     
 }
-@media screen  {
-    img{
-        width: 100%;
-        max-width: 480px;
-        
-    }
+
+.container img {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
+
+.container h1 {
+    color: hsl(218, 44%, 22%);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .container p {
+    color: hsl(220, 15%, 55%);
+    text-align: center;
+  }
+
 .box-1{
-    width: 78%;
+    font-size: 11px;
     text-align: center;
-    font-size: 1.5em;
-    font-weight: 800;
-    margin-top: 5px;
-    font-family:sans-serif;
-    margin: auto;
-    
-    
-    
 }
-    
 
-p{
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    font-size: 1.em;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: gray;
-    font-family: tom;
-    font-weight: 500;
-    padding: 8px 4px;
+.box-1 a {
+    color: hsl(228, 45%, 44%);
 }
-.box-2{
-    text-decoration: none;
-    text-align: center;
 
-}
-.box-2 a{
-    text-decoration: none;
-    text-align: center;
-}
+@media (min-width: 500px) {
+    .container {
+      width: 18.75rem;
+    }
+  }
